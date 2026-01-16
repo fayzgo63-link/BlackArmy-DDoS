@@ -10,18 +10,32 @@ import colorama
 
 # Colors
 class bcolors:
-    
+    NBlack = "\033[38;5;0m  \033[0m"
+    NRed = "\033[38;5;1m  \033[0m"
+    NGreen = "\033[38;5;2m  \033[0m"
+    NYellow = "\033[38;5;3m  \033[0m"
+    NBlue = "\033[38;5;4m  \033[0m"
+    NMagenta = "\033[38;5;5m  \033[0m"
+    NCyan = "\033[38;5;6m  \033[0m"
+    NWhite =  "\033[38;5;7m  \033[0m"
+    BBlack = "\033[48;5;0m  \033[0m"
+    BRed =  "\033[48;5;1m  \033[0m"
+    BGreen = "\033[48;5;2m  \033[0m"
+    BYellow = "\033[48;5;3m  \033[0m"
+    BBlue = "\033[48;5;4m  \033[0m"
+    BMagenta = "\033[48;5;5m  \033[0m"
+    BCyan = "\033[48;5;6m  \033[0m"
+    BWhite = "\033[48;5;7m  \033[0m"
+
  
 if os.name == 'nt':
     os.system("cls")
 else:
     os.system("clear")
-    logo = """
+    print("""
 
     
-"""
-faded_text = fade.fire(logo)
-print(faded_text)
+""")
 url = input("\033[96mURL:  \033[0m").strip()
 u = int(0)
 headers = []
