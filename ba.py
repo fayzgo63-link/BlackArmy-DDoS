@@ -36,21 +36,8 @@ else:
 
     
 """)
-attemps = 0
-
-while attemps < 100:
-    username = input("\033[32mEnter your username: \033[0m")
-    password = input("\033[31mEnter your password: \033[0m")
-
-    if username == 'bp4' and password == 'bp4':
-        print("\033[48;5;3m\033[••⟩⟩ BLACK ARMY INTERNAL SCRIPT \033[0m")
-        break
-    else:
-        print('Incorrect credentials. Check if you have Caps lock on and try again.')
-        attemps += 1
-        continue
-┏━━━━━━━⬣
-
+print("\033[48;5;3m\033[30m••⟩⟩ BLACK ARMY INTERNAL SCRIPT \033[0m")
+print("\033[96m┏━━━━⬣")
 url = input("\033[96m┗> URL:  \033[0m").strip()
 u = int(0)
 headers = []
