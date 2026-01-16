@@ -19,6 +19,8 @@ logo = """
 
     
 """
+faded_text = fade.fire(logo)
+print(faded_text)
 url = input("\033[96mURL:  \033[0m").strip()
 u = int(0)
 headers = []
