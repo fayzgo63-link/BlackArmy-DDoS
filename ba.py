@@ -77,7 +77,7 @@ class httpth1(threading.Thread):
                 u += 1
                 print("\033[48;5;1m\033[37m" +str(u)+ "\033[0m \033[37mrequests: \033[38;5;6mm" +(url)+ "\033[0m") 
             except requests.exceptions.ConnectionError:
-                print("\033[38;5;6m" +(url)+ " \033[31mrequests error!\033[0m")
+                print("\033[48;5;3m\033[30" +(url)+ "\033[0m \033[31mrequests error!\033[0m")
                 pass
             except requests.exceptions.InvalidSchema:
                 print ("[REQUEST TIME OUT]")
