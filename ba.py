@@ -36,7 +36,9 @@ else:
 
     
 """)
-url = input("\033[96mURL:  \033[0m").strip()
+┏━━━━━━━⬣
+
+url = input("\033[96m┗> URL:  \033[0m").strip()
 u = int(0)
 headers = []
 referer = [
