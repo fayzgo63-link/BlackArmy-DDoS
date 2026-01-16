@@ -12,10 +12,11 @@ import colorama
 class bcolors:
     
  
-
-
-os.system("clear")
-logo = """ 
+if os.name == 'nt':
+    os.system("cls")
+else:
+    os.system("clear")
+    logo = """
 
     
 """
