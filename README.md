@@ -1,2 +1,2 @@
-# BlackArmy-DDoS
+# Blacksweet-DDoS
 # Update 17/01/2026
